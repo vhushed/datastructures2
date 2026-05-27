@@ -1,3 +1,4 @@
+#include "path_stack.hpp"
 #include <iostream>
 #include <string>
 #include <limits>
@@ -7,7 +8,18 @@ using namespace std;
 
 int main()
 {
+    PathStack robotPath;
 
+    std::cout << "Robot navigating to item...\n";
+    robotPath.push("FORWARD");
+    robotPath.push("FORWARD");
+    robotPath.push("LEFT");
+    robotPath.push("FORWARD");
+    robotPath.push("RIGHT");
+
+    robotPath.retracePath();
+
+    return 0;
 
 
 
