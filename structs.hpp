@@ -14,4 +14,13 @@ struct Order {
         : orderID(id), itemName(iName), itemID(iID), status("PENDING"), next(nullptr) {}
 };
 
+struct Step {
+    std::string direct; 
+    Step* nxt; 
+    Step(std::string dir) {
+        direct = dir;
+        nxt = nullptr;
+    }
+};
+
 #endif
