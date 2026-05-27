@@ -1,0 +1,11 @@
+ItemID,ItemName,Location,quantity
+101,Keyboard,Aisle-A1,16
+102,Mouse,Aisle-A2,10
+103,Monitor,Aisle-B1,16
+104,Laptop,Aisle-C3,14
+105,Printer,Aisle-D2,29
+106,USB Cable,Aisle-A4,52
+107,Headphones,Aisle-B5,29
+108,Webcam,Aisle-C1,15
+109,Router,Aisle-D4,46
+110,SSD,Aisle-E2,84
