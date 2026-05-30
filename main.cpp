@@ -51,7 +51,7 @@ int main()
         cout << "  [6]  Add Robot to Pool\n";
         cout << "  [7]  Manage Robot Status\n";
         cout << "  [8]  Warehouse Item Search & Management\n";
-        cout << "  [9]  View System Overview\n";
+        cout << "  [9]  View System Overview & Warehouse Layout\n";
         cout << "  [0]  Exit System\n";
         cout << "====================================================================\n";
         cout << "Active tasks: " << activeTaskCount << " | Pending orders: "
