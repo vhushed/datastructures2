@@ -15,10 +15,10 @@ public:
 
     void push(std::string dir);
     std::string pop();
-    std::string peek();
     bool isEmpty();
 
-    void retracePath(); 
+    bool backtrack();     // pop one step (obstacle handling)
+    void retracePath();
 };
 
 

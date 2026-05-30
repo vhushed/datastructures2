@@ -1,7 +1,6 @@
 #include "binary_tree_search_items.hpp"
 #include <iomanip>
 #include <limits>
-#include <algorithm>
 #include <cctype>
 
 

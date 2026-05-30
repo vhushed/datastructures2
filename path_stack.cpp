@@ -33,13 +33,18 @@ std::string PathStack::pop() {
     return val;
 }
 
-std::string PathStack::peek() {
-    if (isEmpty()) return ""; 
-    Step* temp = top;
-    std::string val = temp->direct;
-    return val;
-}
+// go back one step if we see an obstacle
+bool PathStack::backtrack() {
+    if (isEmpty()) {
+        std::cout << "[OBSTACLE] Cannot backtrack -- robot is already at the starting point.\n";
+        return false;
+    }
 
+    std::string undone = pop();
+    std::cout << "[OBSTACLE] Path blocked ahead! Backtracking one step -- undoing: "
+              << undone << "\n";
+    return true;
+}
 
 void PathStack::retracePath() {
     std::cout << "\nInitiating return:\n";
